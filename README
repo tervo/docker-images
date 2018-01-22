@@ -1,1 +1,1 @@
-Basic docker image for GIS ML tasks. Based on latest tensorflow image with among others keras, matplotlib and scikit added. Mount your code to /a (-v host-path:/a) to run the code.x
+Basic docker image for GIS ML tasks. Based on latest tensorflow image with among others keras, matplotlib and scikit added. Mount your code to /a (-v host-path:/a) to run the code.
