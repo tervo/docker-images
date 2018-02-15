@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow
+FROM ufoym/deepo
 
 RUN mkdir /a
 WORKDIR /a
