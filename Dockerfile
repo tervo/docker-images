@@ -19,7 +19,7 @@ RUN export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     apt-get update -y && apt-get install google-cloud-sdk google-cloud-sdk-app-engine-python google-cloud-sdk-app-engine-python-extras google-cloud-sdk-datalab -y
 
 # PIP stuff
-RUN pip install --upgrade pydot graphviz keras-vis opencv-python unicodecsv pyproj requests imbalanced-learn boto boto3 psycopg2-binary unicodecsv pyproj requests google-cloud tensorflow google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow
+RUN pip install --upgrade pydot graphviz keras-vis opencv-python unicodecsv pyproj requests imbalanced-learn boto boto3 psycopg2-binary unicodecsv pyproj requests google-cloud tensorflow google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow google-cloud-storage
 
 # eccodes
 # RUN cd /tmp && mkdir eccodes && cd eccodes && wget https://software.ecmwf.int/wiki/download/attachments/45757960/eccodes-2.7.0-Source.tar.gz?api=v2 -O e.tar.gz && mkdir es && tar -C /tmp/eccodes -xzvf e.tar.gz && mkdir build && cd build && ls -la /tmp/eccodes/eccodes-2.7.0-Source && cmake -DCMAKE_INSTALL_PREFIX=/usr/local /tmp/eccodes/eccodes-2.7.0-Source && make && make install && rm -R /tmp/eccodes
