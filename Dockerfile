@@ -23,7 +23,7 @@ RUN export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     apt-get update -y && apt-get install google-cloud-sdk google-cloud-sdk-app-engine-python google-cloud-sdk-app-engine-python-extras google-cloud-sdk-datalab -y
 
 # PIP stuff
-RUN pip install --upgrade pydot graphviz keras-vis opencv-python unicodecsv pyproj requests boto boto3 psycopg2-binary unicodecsv pyproj requests google-cloud google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow google-cloud-storage scipy keras tensorflow-probability
+RUN pip install --upgrade pydot graphviz keras-vis opencv-python unicodecsv pyproj requests boto boto3 psycopg2-binary unicodecsv pyproj requests google-cloud google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow google-cloud-storage scipy keras tensorflow-probability sklearn
 
 #RUN pip install --upgrade imbalanced-learn
 # eccodes
